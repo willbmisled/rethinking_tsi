@@ -14,12 +14,15 @@ for(i in gh_no){
 }
 all_pkgs <- c(basename(gh_pkgs),pkgs)
 lapply(all_pkgs, library, character.only = T)
+lapply(pkgs, library, character.only = T)
 
 ################################################################################
 # 2. Data
 ################################################################################
 
-data(LakeTrophicModelling)
+#data(LakeTrophicModelling)
+
+load('C:/bryan/rscripts/LakeTrophicModelling/data/LakeTrophicModelling.rda')
 
 ##################################################
 #All Variables
